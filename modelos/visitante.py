@@ -13,7 +13,7 @@ class Visitante:
     def cedula(self, value: str):
         # Validación: La cédula es obligatoria
         if not value or not value.strip():
-            raise ValueError("Debe ingresar su número de cédula.")
+            raise ValueError("Ingrese su número de cédula.")
         self._cedula = value.strip()
 
     @property
@@ -24,7 +24,7 @@ class Visitante:
     def nombre(self, value: str):
         # Validación: El nombre es obligatorio
         if not value or not value.strip():
-            raise ValueError("Debe ingresar su nombre.")
+            raise ValueError("Ingrese su nombre.")
         self._nombre = value.strip()
 
     @property
@@ -35,5 +35,5 @@ class Visitante:
     def motivo(self, value: str):
         # Validación: El motivo es obligatorio
         if not value or not value.strip():
-            raise ValueError("Debe ingresar el motivo de la visita.")
+            raise ValueError("Ingrese el motivo de su visita.")
         self._motivo = value.strip()
